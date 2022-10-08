@@ -5,10 +5,7 @@
     transform: translate(-50%, -50%);
     width: 200px;
     height: 350px;
-    background-image: url('../../images/fool.jpeg');
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;
+
 }
 
 .box .card {
@@ -20,7 +17,7 @@
     height: 100%;
     background: url('https://lh3.googleusercontent.com/proxy/63_S925Nd2GHbLFGZa4tqKBpsr4sNUN3jmtQjaG_OgHeOrjiXebqr4Eth5Oi4PhvdGQnsI9rqjf-iL4MS_KfiSpY7Hayc7tVRktZslv6PB7cnAYq');
     box-shadow: 0 2px 15px rgba(0, 0, 0, .5);
-    transition: .5s;
+    transition: .7s;
     transform-origin: bottom;
     /* border-radius: 10px; */
     background-repeat: no-repeat;
@@ -32,45 +29,58 @@
     background-position: center;
 }
 
-
-.box:hover .card:nth-child(1) {
-    transform: rotate(-24deg) translate(0px, 0px);
-}
-
-.box:hover .card:nth-child(2) {
-    transform: rotate(-16deg) translate(0px, 0px);
-}
-
-.box:hover .card:nth-child(3) {
-    transform: rotate(-8deg) translate(0px, 0px);
-}
-
-.box:hover .card:nth-child(4) {
-    transform: rotate(0deg) translate(0px, 0px);
-}
-
-.box:hover .card:nth-child(5) {
-    transform: rotate(8deg) translate(0px, 0px);
-}
-
-.box:hover .card:nth-child(6) {
-    transform: rotate(16deg) translate(0px, 0px);
-}
-
-.box:hover .card:nth-child(7) {
-    transform: rotate(24deg) translate(0px, 0px);
-}
-
-.box:hover .card:nth-child(8) {
-    transform: rotate(32deg) translate(0px, 0px);
-}
-
 /* 마우스를 올리면 */
-.box .card:hover {
+.card:nth-child(1):hover {
+    z-index: 1;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+    transform: rotate(-20deg)translate(-320px, 0px)  translateY(-50px) !important; 
+}
+
+.card:nth-child(2):hover {
+    z-index: 1;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+    transform: rotate(-15deg) translate(-240px, 0px) translateY(-50px) !important; 
+}
+.card:nth-child(3):hover {
+    z-index: 1;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+    transform: rotate(-10deg) translate(-160px, 0px)  translateY(-50px) !important; 
+}
+.card:nth-child(4):hover {
+    z-index: 1;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+    transform: rotate(-5deg) translate(-80px, 0px)  translateY(-50px) !important; 
+}
+.card:nth-child(5):hover {
+    z-index: 1;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+    transform: rotate(0deg) translate(0px, 0px) translateY(-50px)  !important; 
+}.card:nth-child(6):hover {
+    z-index: 1;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+    transform: rotate(5deg) translate(80px, 0px) translateY(-50px) !important; 
+}.card:nth-child(7):hover {
+    z-index: 1;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+    transform: rotate(10deg) translate(160px, 0px) translateY(-50px) !important; 
+}.card:nth-child(8):hover {
+    z-index: 1;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+    transform: rotate(15deg) translate(240px, 0px) translateY(-50px) !important; 
+}.card:nth-child(9):hover {
+    z-index: 1;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+    transform: rotate(20deg) translate(320px, 0px) translateY(-50px) !important; 
+}
+
+.picked{
     z-index: 1;
     box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
 }
 
+.unpicked{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../../images/fool.jpeg') !important;
+}
 
 /* 모바일 화면 최적화 */
 @media (min-width: 320px) and (max-width: 480px) {
@@ -81,10 +91,6 @@
         transform: translate(-50%, -50%);
         width: 120px;
         height: 210px;
-        background-image: url('../../images/fool.jpeg');
-        background-size: cover; 
-        background-repeat: no-repeat;
-        background-position: center;
     }
     
 }
