@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>웨일대학 2팀 - 이스터에그</title>
+    <link rel="stylesheet" href="../css/error.css">
 </head>
 <body>
-    images 클릭 
-    go to ~
-
+    <div class="box">
+        <div id="error-img">
+            <div class="error-img-click" onclick="location.href='select.html'"></div>
+        </div>
+        <div class="text-wrapper">
+            <div class="title-text">웹페이지를 찾을 수 없어요.</div>
+            <div class="sub-text">127.0.0.1에서 연결을 거부했습니다.</div>
+            <div class="sub-text">다음 방법을 시도해 보세요.</div>
+            <ul class="list">
+                <li>연결 확인</li>
+                <li>프록시 및 방화벽 확인</li>
+            </ul>
+            
+            <div class="error-code">ERR_CONNECTION_REFUSED</div>
+            <div class="line"></div>
+            <div>
+                <div class="button">세부정보</div>
+                <div class="button">새로고침</div>
+            </div>
+        </div>
+</div>
 </body>
 </html>
