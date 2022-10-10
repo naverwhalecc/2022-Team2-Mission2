@@ -1,37 +1,125 @@
+.body{
+  width: 100%;
+  height: 100%;
+}
 .box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-gap: 10px;
+    padding: 10px;
+  
 }
-#error-img{
-    margin: auto;
-    width: 400px;
-    height: 400px;
-    background-image: url('../../images/error_img.png');
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;
+#error-img {
+  margin: auto;
+  width: 70%;
+  height: 100%;
+  background-image: url("../../images/error_img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.error-img-click{
-    cursor: pointer;
-    position: relative;
-    width: 50px;
-    height: 50px;
-    top: 195px;
-    left: 160px;
-    border-radius: 100%;
+.error-img-click {
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+    left: 42%;
+  border-radius: 100%;
 }
-.title-text{
-    font-family: var(--sub-font-family);
-    color: var(--title-color);
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 38px;
-    letter-spacing: -1px;
-    text-align: left;
+.title-text {
+  font-family: var(--sub-font-family);
+  color: var(--title-color);
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: -1px;
+  text-align: left;
 }
-.sub-text{
+.sub-text {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+  margin-top: 25px;
+  letter-spacing: -0.5px;
+  word-wrap: break-word;
+  color: var(--desc-color);
+  text-align: left;
+}
+.list {
+  margin-left: 30px;
+  color: var(--list-color);
+  font-size: 13px;
+  display: list-item;
+}
+.error-code {
+  display: block;
+  color: #999;
+  font-size: 12px;
+  margin-block-start: 20px;
+}
+.line {
+  display: block;
+  margin-top: 40px;
+  border-top: 1px solid #d6d6d6;
+}
+.button {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  padding: 11px 18px;
+  background-color: #fff;
+  border: 1px solid #0000001a;
+  border-radius: 6px;
+
+  appearance: auto;
+  writing-mode: horizontal-tb !important;
+
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  box-sizing: border-box;
+  margin: 0em;
+  padding: 11px 18px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: #0000001a;
+  border-image: initial;
+
+  letter-spacing: -0.25pt;
+
+  margin-top: 50px;
+}
+
+
+/* 모바일 화면 최적화 */
+@media (min-width: 320px) and (max-width: 480px) {
+  .box {
+      display: block;
+    
+  }
+  #error-img{
+    width: 100px;
+    height: 100px;
+  }
+
+  .title-text{
+    font-size: 15px;
+  }
+
+  .sub-text {
     font-size: 13px;
     font-weight: normal;
     line-height: 20px;
@@ -40,67 +128,31 @@
     word-wrap: break-word;
     color: var(--desc-color);
     text-align: left;
-}
-.list{
-    margin-left: 30px;
-    color: var(--list-color);
-    font-size: 13px;
-    display: list-item;
+  }
 
-}
-.error-code{
-    display: block;
-    color: #999;
-    font-size: 12px;
-    margin-block-start: 20px;
-}
-.line{
-    display: block;
-    margin-top: 40px;
-    border-top: 1px solid #d6d6d6;
-}
-.button{
-    font-size: 14px;
-    line-height: 20px;
-    color: #000;
-    padding: 11px 18px;
-    background-color: #fff;
-    border: 1px solid #0000001a;
-    border-radius: 6px;
+  .button {
+    font-size: 11px;
+    line-height: 15px;
+    padding: 5px 10px;
 
-    appearance: auto;
-    writing-mode: horizontal-tb !important;
 
-    text-rendering: auto;
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: flex-start;
-    cursor: default;
-    box-sizing: border-box;
-    margin: 0em;
     padding: 11px 18px;
     border-width: 2px;
     border-style: outset;
     border-color: #0000001a;
     border-image: initial;
-
+  
     letter-spacing: -0.25pt;
+  
+    margin-top: 10px;
+  }
 
-    margin-top: 50px;
-}
+  .error-img-click {
 
-/* 데스크탑 화면 최적화 */
-@media all and (min-width:1025px) {
-    .box {
-        display: grid;
-        grid-template-columns: 500px 500px;
-        grid-gap: 10px;
-        padding: 10px;
-    }
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 42%;
+    border-radius: 100%;
+  }
 }

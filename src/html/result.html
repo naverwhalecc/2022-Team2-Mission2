@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>웨일대학 2팀 - 이스터에그</title>
-    <script src="../js/result.js"></script>
-</head>
-<body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
+    <link rel="stylesheet" href="../css/result.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="card">
+        <div class="glow"></div>
+      </div>
 
+      <div class="text-wrapper">
+        <div class="title-text">선택한 카드 이름</div>
+        <div class="sub-text">
+          앓던 이가 빠지는 것 같은 날입니다. 오래 속을 썩혔던 사건이 드디어
+          해결됩니다. 오래 묵었던 일이 해결되니 한결 가벼워진 마음으로 새 일을
+          모색해 볼 수 있습니다. 평소에 자신을 괴롭혔던 일이 있다면 오늘만큼은
+          그 일로부터 자유로울 수 있습니다.</br> </br> 
+          
+          자신의 노력이 바탕이 되어 모든
+          상황을 유리하게 만들 수 있으며 자신의 마음 또한 여유로워 지는 것을 알
+          수 있습니다. 즐거운 마음으로 하루를 보낼 수 있겠군요
+        </div>
 
-    <a href="img/sample.jpg" download>이미지 다운로드</a>
-    <script>
+        <div class="btn_wrapper">
+          <a id="save_link" href="../../images/card_front.png" download><div class="save_btn"></div></a>
+          <div class="replay_btn" onclick="location.href='select.html'"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/result.js"></script>
 
-window.history.forward(); 
-function noBack(){ 
-  window.history.forward();
-}
-        </script>
-</body>
 </html>

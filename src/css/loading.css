@@ -1,0 +1,110 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/bg_web.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: "PyeongChang Peace";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff")
+    format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+.title {
+  position: absolute;
+  transform: translate(-50%, 0%);
+
+  left: 50%;
+  top: 16.74%;
+  width: 385px;
+  height: 42px;
+
+  font-family: "PyeongChang Peace";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 42px;
+  text-align: center;
+  /* identical to box height, or 91% */
+
+  color: #f8dab9;
+}
+
+.sub {
+  position: absolute;
+  transform: translate(-50%, 0%);
+
+  left: 50%;
+  top: 22.74%;
+  width: 200px;
+  height: 42px;
+
+  font-family: "Pretendard";
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 28px;
+  text-align: center;
+
+  /* identical to box height, or 100% */
+
+  color: #cfb7b3;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(1turn) rotateX(10deg);
+  }
+}
+
+.box {
+  position: absolute;
+  left: 50%;
+  top: 50.74%;
+  transform: translate(-50%, -50%);
+}
+.card {
+  animation: spin 2s ease;
+  animation-iteration-count: infinite;
+
+  width: 200px;
+  height: 350px;
+  background-image: url("../../images/card_back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* 모바일 화면 최적화 */
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    background-image: url("../../images/bg_app.jpg");
+  }
+  .card {
+    width: 120px;
+    height: 210px;
+  }
+  .title {
+    font-size: 1.2rem;
+  }
+  
+  .sub {
+    font-size: 1rem;
+  }
+}
