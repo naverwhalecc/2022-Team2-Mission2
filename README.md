@@ -19,4 +19,4 @@
    [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)를 실행한 뒤 `http://127.0.0.1:5500/src/html/error.html`로 접속하세요.   
 
 ## 데모사이트
-[데모사이트 이동하기](https://cerulean-gumption-93ac92.netlify.app/src/html/error.html)
+[데모사이트 이동하기](https://whaleteam2tarot.netlify.app/src/html/error.html)
